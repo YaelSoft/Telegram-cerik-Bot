@@ -10,13 +10,13 @@ from datetime import datetime
 # Yapılandırma - Ortam değişkenlerinden al
 api_id = 36435345
 api_hash = "28cfcf7036020a54feadb2d8b29d94d0"
-
+session_string = os.getenv("1BJWap1sBuwEZTUBIAq_7jegNsC9wwxaIKGB5dew-EV751RiJ2WbKb6a94Ci8wbY3PDD_31Lob3OvqZuykJj7rSc23dsJ2zGDwA_xeM2wcd6K61JCBMCAd4nOUG2aNaVoOgaVZDVOEOsXQUlJC55J3YOzjppIoziZXTI3b87OBprGU9n0c9yBXgC0HbYNz-8XDP7KJg8ledKwtMVsE7us1Byv6M35PZpXuK8sRmI_-rv1PPHfqhD72SABrH2jhCShvPoQy8u11i9Nniroa_1caEPfskLXIsmaPTKXZVIy3yGt5u7e3QyaLexIC7gFhwB1bYay04-NXo2BsvSkYjD2tf4dInefvUg=")
 # Userbot modu - kendi hesabınızla giriş yapın
 # İlk çalıştırmada telefon numarası ve doğrulama kodu istenecek
 SESSION_NAME = 'userbot_session'
 
 # Telegram Client oluştur (userbot olarak)
-client = TelegramClient(SESSION_NAME, API_ID, API_HASH)
+client = TelegramClient(StringSession(session_string), api_id, api_hash)
 # Bot komutlarını dinleyecek kullanıcı ID'leri (güvenlik için)
 # Kendi Telegram ID'nizi buraya ekleyin
 ALLOWED_USERS = [8102629232]
