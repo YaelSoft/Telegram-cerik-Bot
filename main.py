@@ -480,7 +480,7 @@ async def main():
     print("=" * 50)
 
     # API bilgilerini kontrol et
-    if not API_ID or not API_HASH:
+    if not api_id or not api_hash:
         print(
             "\n❌ HATA: TELEGRAM_API_ID ve TELEGRAM_API_HASH ortam değişkenleri ayarlanmamış!"
         )
